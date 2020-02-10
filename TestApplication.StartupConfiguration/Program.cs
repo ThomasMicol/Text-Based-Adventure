@@ -12,8 +12,8 @@ namespace TestApplication.StartupConfiguration
         {
             IViewHandler view = new TextBaseViewHandler();
             IDataAccessHandler dataAccess = new TextFileDataAccessHandler();
-            IGameLogicHandler gameLogic = new BaseGameLogicHandler(view, dataAccess);
-            IGameEngineHandler engineHandler = new BasicGameLoopEngineHandler(gameLogic);
+            IGameLogicHandler gameLogic = new BaseGameLogicHandler(dataAccess);
+            IGameEngineHandler engineHandler = new BasicGameLoopEngineHandler(view, gameLogic);
             engineHandler.RunGame();
         }
     }

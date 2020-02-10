@@ -8,12 +8,10 @@ namespace TestApplication.GameLogic
 {
     public class BaseGameLogicHandler : IGameLogicHandler
     {
-        private readonly IViewHandler _aView;
         private readonly IDataAccessHandler _dataAccess;
 
-        public BaseGameLogicHandler(IViewHandler aView, IDataAccessHandler dataAccess)
+        public BaseGameLogicHandler(IDataAccessHandler dataAccess)
         {
-            _aView = aView;
             _dataAccess = dataAccess;
         }
     }
