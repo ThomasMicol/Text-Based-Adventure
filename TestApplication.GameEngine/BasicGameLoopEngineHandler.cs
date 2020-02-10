@@ -8,6 +8,8 @@ namespace TestApplication.GameEngine
     public class BasicGameLoopEngineHandler : IGameEngineHandler
     {
         private readonly IGameLogicHandler _gameLogic;
+        public RunningCodeStatus RunningCode { get; private set; }
+
 
         public BasicGameLoopEngineHandler(IGameLogicHandler gameLogic)
         {
@@ -16,7 +18,10 @@ namespace TestApplication.GameEngine
 
         public void RunGame()
         {
-            throw new NotImplementedException();
+            while(RunningCode == RunningCodeStatus.Running)
+            {
+
+            }
         }
     }
 }
