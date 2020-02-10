@@ -5,4 +5,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestApplication.DataAccess\TestApplication.DataAccess.csproj" />
+    <ProjectReference Include="..\TestApplication.GameEngine\TestApplication.GameEngine.csproj" />
+    <ProjectReference Include="..\TestApplication.GameLogic\TestApplication.GameLogic.csproj" />
+    <ProjectReference Include="..\TestApplication.ViewHandler\TestApplication.ViewHandler.csproj" />
+  </ItemGroup>
+
 </Project>

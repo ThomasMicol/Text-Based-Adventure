@@ -1,4 +1,8 @@
 ﻿using System;
+using TestApplication.DataAccess;
+using TestApplication.GameEngine;
+using TestApplication.GameLogic;
+using TestApplication.ViewHandler;
 
 namespace TestApplication.StartupConfiguration
 {
@@ -6,10 +10,11 @@ namespace TestApplication.StartupConfiguration
     {
         static void Main(string[] args)
         {
-            IViewHandler view = new TextBasedViewHandler();
-            IGameLogicHandler gameLogic = new BaseGameLogicHandler();
-            IGameEngineHandler engineHandler = new BasicGameLoopEngineHandler();
+            IViewHandler view = new TextBaseViewHandler();
             IDataAccessHandler dataAccess = new TextFileDataAccessHandler();
+            IGameLogicHandler gameLogic = new BaseGameLogicHandler(view, dataAccess);
+            IGameEngineHandler engineHandler = new BasicGameLoopEngineHandler(gameLogic);
+            engineHandler.RunGame();
         }
     }
 }
