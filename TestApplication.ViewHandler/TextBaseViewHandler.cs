@@ -6,5 +6,8 @@ namespace TestApplication.ViewHandler
 {
     public class TextBaseViewHandler : IViewHandler
     {
+        public TextBaseViewHandler()
+        {
+        }
     }
 }

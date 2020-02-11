@@ -3,15 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.StartupConfiguration", "TestApplication.StartupConfiguration\TestApplication.StartupConfiguration.csproj", "{DC0D33AB-D85B-4AA5-82DB-64B0297246F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication.StartupConfiguration", "TestApplication.StartupConfiguration\TestApplication.StartupConfiguration.csproj", "{DC0D33AB-D85B-4AA5-82DB-64B0297246F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.GameLogic", "TestApplication.GameLogic\TestApplication.GameLogic.csproj", "{04F283D2-487C-4214-A378-B6955A218DB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication.GameLogic", "TestApplication.GameLogic\TestApplication.GameLogic.csproj", "{04F283D2-487C-4214-A378-B6955A218DB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.ViewHandler", "TestApplication.ViewHandler\TestApplication.ViewHandler.csproj", "{79473BB6-7A7D-4EA9-992C-BBE1C3084F19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication.ViewHandler", "TestApplication.ViewHandler\TestApplication.ViewHandler.csproj", "{79473BB6-7A7D-4EA9-992C-BBE1C3084F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.GameEngine", "TestApplication.GameEngine\TestApplication.GameEngine.csproj", "{71AB9EA1-61B4-41AE-B917-A1ADC35A295C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication.GameEngine", "TestApplication.GameEngine\TestApplication.GameEngine.csproj", "{71AB9EA1-61B4-41AE-B917-A1ADC35A295C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.DataAccess", "TestApplication.DataAccess\TestApplication.DataAccess.csproj", "{2CDF74E4-633C-43E8-B8B0-2072D848904F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication.DataAccess", "TestApplication.DataAccess\TestApplication.DataAccess.csproj", "{2CDF74E4-633C-43E8-B8B0-2072D848904F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApplication.Tests", "TestApplication.Tests", "{F8965955-2CC7-42AA-B3C7-FBDF2161D614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.ViewHandler.Tests", "TestApplication.ViewHandler.Tests\TestApplication.ViewHandler.Tests.csproj", "{C4A9804F-EBB0-4FA8-9E1D-71375300E360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.StartupConfiguration.Tests", "TestApplication.StartupConfiguration.Test\TestApplication.StartupConfiguration.Tests.csproj", "{0C946A05-7EA0-4788-8FB6-452C1A6DC848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.GameLogic.Tests", "TestApplication.GameLogic.Tests\TestApplication.GameLogic.Tests.csproj", "{C9A94E23-139F-47A9-A533-D16E186B9EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.GameEngine.Tests", "TestApplication.GameEngine.Tests\TestApplication.GameEngine.Tests.csproj", "{E18636AA-5E5D-4285-9937-248B64B685DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.DataAccess.Tests", "TestApplication.DataAccess.Tests\TestApplication.DataAccess.Tests.csproj", "{B7748F00-8EAD-49DB-B25F-45286BB70658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +51,36 @@ Global
 		{2CDF74E4-633C-43E8-B8B0-2072D848904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDF74E4-633C-43E8-B8B0-2072D848904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDF74E4-633C-43E8-B8B0-2072D848904F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A9804F-EBB0-4FA8-9E1D-71375300E360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A9804F-EBB0-4FA8-9E1D-71375300E360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A9804F-EBB0-4FA8-9E1D-71375300E360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A9804F-EBB0-4FA8-9E1D-71375300E360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C946A05-7EA0-4788-8FB6-452C1A6DC848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C946A05-7EA0-4788-8FB6-452C1A6DC848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C946A05-7EA0-4788-8FB6-452C1A6DC848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C946A05-7EA0-4788-8FB6-452C1A6DC848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A94E23-139F-47A9-A533-D16E186B9EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A94E23-139F-47A9-A533-D16E186B9EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A94E23-139F-47A9-A533-D16E186B9EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A94E23-139F-47A9-A533-D16E186B9EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18636AA-5E5D-4285-9937-248B64B685DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18636AA-5E5D-4285-9937-248B64B685DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18636AA-5E5D-4285-9937-248B64B685DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18636AA-5E5D-4285-9937-248B64B685DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7748F00-8EAD-49DB-B25F-45286BB70658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7748F00-8EAD-49DB-B25F-45286BB70658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7748F00-8EAD-49DB-B25F-45286BB70658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7748F00-8EAD-49DB-B25F-45286BB70658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4A9804F-EBB0-4FA8-9E1D-71375300E360} = {F8965955-2CC7-42AA-B3C7-FBDF2161D614}
+		{0C946A05-7EA0-4788-8FB6-452C1A6DC848} = {F8965955-2CC7-42AA-B3C7-FBDF2161D614}
+		{C9A94E23-139F-47A9-A533-D16E186B9EB6} = {F8965955-2CC7-42AA-B3C7-FBDF2161D614}
+		{E18636AA-5E5D-4285-9937-248B64B685DA} = {F8965955-2CC7-42AA-B3C7-FBDF2161D614}
+		{B7748F00-8EAD-49DB-B25F-45286BB70658} = {F8965955-2CC7-42AA-B3C7-FBDF2161D614}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58811902-09FA-4F92-A09C-7A893073F4CD}
