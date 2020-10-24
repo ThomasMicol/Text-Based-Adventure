@@ -21,9 +21,11 @@ namespace TestApplication.GameEngine
 
         public void RunGame()
         {
+            RunningCode = RunningCodeStatus.Running;
+
             while(RunningCode == RunningCodeStatus.Running)
             {
-
+                Console.WriteLine("Is this runner running?");
             }
         }
     }

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestApplication.GameLogic\TestApplication.GameLogic.csproj" />
+    <ProjectReference Include="..\TestApplication.ViewHandler\TestApplication.ViewHandler.csproj" />
   </ItemGroup>
 
 </Project>
